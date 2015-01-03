@@ -40,7 +40,7 @@
             <div class="u-containerDefault">
                 <h2 class="Profile-title u-title">Mi perfil</h2>
                 <p class="Profile-description">
-                    Administrador de sistemas informáticos, graduado de la Universidad Nacional de Colombia sede Manizales, Front-end y estratega digital(conocimientos en tecnologias como HTML5, CSS3, Javascript, Jquery, SEO, Inbound y Outbound marketing, etc). 
+                    Administrador de sistemas informáticos, graduado de la Universidad Nacional de Colombia sede Manizales, Front-end y estratega digital (conocimientos en tecnologias como HTML5, CSS3, Javascript, Jquery, SEO, Inbound y Outbound marketing, etc). 
                 </p>
                 <p class="Profile-description">
                     En este portafolio, intento mostrar algunos de mis proyectos, espero que lo disfrutes y si tienes alguna duda o interes, me contactes
@@ -208,11 +208,15 @@
           ga('send', 'pageview');
 
           $('.Work-item').on('click', function() {
-              ga('send', 'event', 'consulta', 'click', 'proyecto');
+              ga('send', 'event', 'proyecto', 'click', 'article');
             });
           
+          $('.Header-link').on('click', function() {
+              ga('send', 'event', 'redessociales2', 'click', 'headerlink');
+            });
+
           $('.Profile-link').on('click', function() {
-              ga('send', 'event', 'redessociales', 'click', 'redsocial');
+              ga('send', 'event', 'redessociales', 'click', 'profilelink');
             });
         </script>
     </body>
